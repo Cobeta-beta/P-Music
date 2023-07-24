@@ -1,8 +1,8 @@
-# K-Music
-
-## An audio player for KaiOS with playlist manager
-
-## Licence
+Внимание! Я не создала, и не причатсна к созданию K-music. Я, только его перевела, а так-же добавила некоторые изменения в дизайне.
+# P-Music
+Самый удобный плеер для KaiOS. Теперь на русском, и с Persona темой!
+## Лицензия
 
 [MIT](https://opensource.org/licenses/MIT)
 
+Оригинальный гит : https://github.com/arma7x/kaimusic
