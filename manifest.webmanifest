@@ -2,7 +2,7 @@
   "lang": "en-US",
   "id": "K-Music",
   "name": "K-Music",
-  "description": "An audio player for KaiOS with playlist manager + Equalizer + MP3 Cutter/Trimmer",
+  "description": "Аудио плеер для KaiOS с менеджером плейлистов + Эквалайзером + MP3 Обрезкой/Закальцовкой",
   "theme": "#431F7F",
   "theme_color": "#431F7F",
   "background_color": "#431F7F",
@@ -29,10 +29,10 @@
     "version": "3.2.0",
     "type": "privileged",
     "core": true,
-    "default_locale": "en-US",
+    "default_locale": "ru-RU",
     "developer": {
       "name": "arma7x",
-      "url": "https://www.kaiostech.com"
+      "url": "https://github.com/arma7x/kaimusic"
     },
     "origin": "kaimusic",
     "chrome": {
@@ -46,10 +46,10 @@
         "access": "readwrite"
       },
       "audio-channel-normal": {
-        "description" : "Needed to play this app's audio content on the normal channel"
+        "description" : "Нужно для проигрывания аудио на обычном канале"
       },
       "audio-channel-content": {
-        "description": "To play audio in background"
+        "description": "Для проигрывания аудио в фоне"
       },
       "volumemanager": {},
       "external-api": {}
@@ -60,8 +60,8 @@
     "locales": {
       "en-US": {
         "name": "K-Music",
-        "subtitle": "An audio player for KaiOS with playlist manager + Equalizer + MP3 Cutter/Trimmer",
-        "description": "An audio player for KaiOS with playlist manager + Equalizer + MP3 Cutter/Trimmer"
+        "subtitle": "Аудио плеер для KaiOS с менеджером плейлистов + Эквалайзером + MP3 Обрезкой/Закальцовкой",
+        "description": "Аудио плеер для KaiOS с менеджером плейлистов + Эквалайзером + MP3 Обрезкой/Закальцовкой"
       }
     }
   }

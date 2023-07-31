@@ -28,9 +28,9 @@ var mp3cutter = (function () {
 
 			var bitrate = arguments.length <= 4 || arguments[4] === undefined ? 192 : arguments[4];
 
-			if (!src) throw 'Invalid parameters!';
+			if (!src) throw 'Неверные параметры!';
 
-			if (start > end) throw 'Start is bigger than end!';else if (start < 0 || end < 0) throw 'Start or end is negative, cannot process';
+			if (start > end) throw 'Старт больше чем конец!';else if (start < 0 || end < 0) throw 'Старт, или конец негативны, невозможно обработать';
 
 			this.start = start;
 			this.end = end;
@@ -103,7 +103,7 @@ var mp3cutter = (function () {
 					} else if (e.data.error) {
 						throw(e.data.error);
 					} else {
-						throw('Error Worker');
+						throw('Ошибка Worker');
 					}
 				}
 			}
