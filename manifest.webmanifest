@@ -26,7 +26,7 @@
     }
   ],
   "b2g_features": {
-    "version": "3.3.0",
+    "version": "3.2.0",
     "type": "privileged",
     "core": true,
     "default_locale": "en-US",
@@ -51,9 +51,7 @@
       "audio-channel-content": {
         "description": "To play audio in background"
       },
-      "volumemanager": {
-        "description": "To control system volume"
-      },
+      "volumemanager": {},
       "external-api": {}
     },
     "dependencies": {

@@ -1,18 +1,5 @@
 window.addEventListener("load", function() {
 
-  if (navigator.mozAudioChannelManager) {
-    navigator.mozAudioChannelManager.onheadphoneschange = () => {
-      if(navigator.mozAudioChannelManager.headphones == false) {
-        if (PLAYER && PLAYER.duration > 0 && !PLAYER.paused) {
-          PLAYER.pause();
-        }
-        if (window['__AURORA__'] && window['__AURORA__'].playing) {
-          window['__AURORA__'].pause();
-        }
-      }
-    }
-  }
-
   function startVolumeManager() {
     const session = new lib_session.Session();
     const sessionstate = {};
@@ -242,12 +229,6 @@ window.addEventListener("load", function() {
   var RGT_DBL_CLICK_TH = 0;
   var RGT_DBL_CLICK_TIMER = undefined;
   var SLEEP_SWITCH = false;
-
-  var SILENT = document.createElement("AUDIO");
-  SILENT.mozAudioChannelType = 'content';
-  SILENT.setAttribute("src","/assets/Short_Silent_Empty_Audio.mp3");
-  SILENT.setAttribute("controls", "controls");
-  SILENT.loop = true;
 
   var PLAYER = document.createElement("audio");
   PLAYER.volume = 1;
@@ -3825,48 +3806,6 @@ window.addEventListener("load", function() {
       case '8':
         if (CURRENT_SCREEN === 'HOME')
           speedDown();
-        break
-      case 'MediaPause':
-        SILENT.play();
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        togglePlay();
-        break
-      case 'MediaPlay':
-        SILENT.play();
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        togglePlay();
-        break
-      case 'MediaTrackNext':
-        SILENT.play();
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        nextTrack();
-        break
-      case 'MediaTrackPrevious':
-        SILENT.play();
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        previousTrack();
-        break
-      case 'VolumeUp':
-        SILENT.play();
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        volumeUp();
-        break
-      case 'VolumeDown':
-        SILENT.play();
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        volumeDown();
         break
     }
   }
