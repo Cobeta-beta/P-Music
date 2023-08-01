@@ -7,7 +7,6 @@
 [MIT](https://opensource.org/licenses/MIT)
 
 Оригинальный гит : https://github.com/arma7x/kaimusic
-
 #Лог измененний
 
 0.7 : перевод сам сделан. Но не адаптирован.                                                                                                                                                                                     
